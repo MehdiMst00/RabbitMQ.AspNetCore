@@ -1,6 +1,6 @@
 ﻿namespace RabbitMQ.AspNetCore.Publisher.Dtos;
 
-public class CreateUserDto
+public record CreateUserDto
 {
     public required string Email { get; set; }
     public required string Username { get; set; }

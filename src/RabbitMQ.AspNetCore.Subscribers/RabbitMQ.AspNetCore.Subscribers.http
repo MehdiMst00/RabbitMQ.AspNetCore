@@ -1,6 +1,0 @@
-@RabbitMQ.AspNetCore.Subscribers_HostAddress = http://localhost:5224
-
-GET {{RabbitMQ.AspNetCore.Subscribers_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
