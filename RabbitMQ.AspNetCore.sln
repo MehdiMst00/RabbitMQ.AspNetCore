@@ -5,11 +5,13 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21D819D1-4F25-4053-B896-6AE8E92E5D89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.AspNetCore.Publisher", "src\RabbitMQ.AspNetCore.Publisher\RabbitMQ.AspNetCore.Publisher.csproj", "{00A03DA5-D029-4D66-BE49-232C582736DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.AspNetCore.Publisher", "src\RabbitMQ.AspNetCore.Publisher\RabbitMQ.AspNetCore.Publisher.csproj", "{00A03DA5-D029-4D66-BE49-232C582736DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.AspNetCore.Subscribers", "src\RabbitMQ.AspNetCore.Subscribers\RabbitMQ.AspNetCore.Subscribers.csproj", "{3BFE420D-F1BC-4D6D-95E4-D1D01D1497B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.AspNetCore.Subscribers", "src\RabbitMQ.AspNetCore.Subscribers\RabbitMQ.AspNetCore.Subscribers.csproj", "{3BFE420D-F1BC-4D6D-95E4-D1D01D1497B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.AspNetCore", "src\RabbitMQ.AspNetCore\RabbitMQ.AspNetCore.csproj", "{08C8A0A3-D2DF-4108-94FC-57D437AAFCDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.AspNetCore", "src\RabbitMQ.AspNetCore\RabbitMQ.AspNetCore.csproj", "{08C8A0A3-D2DF-4108-94FC-57D437AAFCDA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{ED449ABA-5C7E-458E-BF28-91D8B04A7046}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{08C8A0A3-D2DF-4108-94FC-57D437AAFCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08C8A0A3-D2DF-4108-94FC-57D437AAFCDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08C8A0A3-D2DF-4108-94FC-57D437AAFCDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED449ABA-5C7E-458E-BF28-91D8B04A7046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED449ABA-5C7E-458E-BF28-91D8B04A7046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED449ABA-5C7E-458E-BF28-91D8B04A7046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED449ABA-5C7E-458E-BF28-91D8B04A7046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

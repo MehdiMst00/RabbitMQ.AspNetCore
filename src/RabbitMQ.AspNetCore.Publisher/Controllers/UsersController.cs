@@ -20,7 +20,7 @@ public class UsersController : ControllerBase
         _publishEndpoint = publishEndpoint;
     }
 
-    [HttpPost()]
+    [HttpPost]
     public async Task<IActionResult> CreateUserAsync([FromBody] CreateUserDto dto)
     {
         // it's better use automapper :)

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+
+  rabbitmq.aspnetcore.publisher:
+    image: ${DOCKER_REGISTRY-}rabbitmqaspnetcorepublisher
+    build:
+      context: .
+      dockerfile: src/RabbitMQ.AspNetCore.Publisher/Dockerfile
+
+  rabbitmq.aspnetcore.subscribers:
+    image: ${DOCKER_REGISTRY-}rabbitmqaspnetcoresubscribers
+    build:
+      context: .
+      dockerfile: src/RabbitMQ.AspNetCore.Subscribers/Dockerfile
+

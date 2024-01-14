@@ -8,19 +8,14 @@ public static class ConfigureServices
         IConfiguration configuration)
     {
         var eventBus = configuration.GetRequiredSection("EventBus");
+        string hostAddress = eventBus.GetValue<string>("Host") ??
+            throw new ArgumentNullException("EventBus:Host");
 
         services.AddMassTransit(x =>
         {
             x.UsingRabbitMq((ctx, cfg) =>
             {
-                cfg.Host(eventBus["Host"],
-                    eventBus["VirtualHost"],
-                    c =>
-                    {
-                        c.Username(eventBus["Username"]);
-                        c.Password(eventBus["Password"]);
-                    });
-
+                cfg.Host(new Uri(hostAddress));
                 cfg.ConfigureEndpoints(ctx);
             });
         });
