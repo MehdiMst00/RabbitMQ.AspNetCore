@@ -13,8 +13,9 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - "EventBus:Host=amqp://guest:guest@rabbitmq:5672"
+    restart: always
     ports:
-      - "8080"
+      - "7000:8080"
     depends_on:
       - rabbitmq
 
@@ -22,7 +23,9 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
+      - "EventBus:Host=amqp://guest:guest@rabbitmq:5672"
+    restart: always
     ports:
-      - "8080"
+      - "7001:8080"
     depends_on:
       - rabbitmq
